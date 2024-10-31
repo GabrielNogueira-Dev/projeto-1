@@ -29,17 +29,20 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
 background-size: cover;
+height: 100vh;
+
   }
   body *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--text-color);
     text-decoration: none;
+  
   }
   #container {
-    width: 100%;
     max-width: 588px;
     margin: 56px auto 0px;
     padding:0px 24px ;
+  
   }
 #profile {
   text-align: center;
@@ -140,10 +143,15 @@ border: 1.5px solid var(--text-color);
   #social-links :hover{
 background-color: var(--hightlight-color);
 transition: blackgroud 0;
-
   }
+/* media querius*/
 
-
-
-
+@media (min-width:700px) {
   
+  :root{
+    --bg-url:url(./bg-desktop.jpg);
+  }
+.light{
+  --bg-url:url(./bg-desktop-light.jpg);
+}
+ }
