@@ -73,6 +73,8 @@ height: 100vh;
     z-index: 1;
     transform: translateY(-50%);
     top: 50%;
+    left: 0;
+    animation: backslowbutton 0.4s forwards;
   }
   #switch span{
     display: block;
@@ -84,9 +86,16 @@ height: 100vh;
 -webkit-backdrop-filter: blur(4px);
 border-radius: 9999px;
   }
+  #switch button:hover{
+    outline: 8px solid var(--hightlight-color);
+    outline-color: rgb(236, 176, 236);
+    outline-width:7px ;
+    
+  }
 .light #switch button{
-right: 0;
-left: initial;
+/*right: 0;
+left: initial;*/
+animation: slowbutton 0.4s forwards;
 }
 
   
@@ -153,5 +162,21 @@ transition: blackgroud 0;
   }
 .light{
   --bg-url:url(./bg-desktop-light.jpg);
+}
+@keyframes slowbutton {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes backslowbutton {
+  from{
+    left: 50%;
+  }
+  to{
+    left: left 0;
+  }
 }
  }
