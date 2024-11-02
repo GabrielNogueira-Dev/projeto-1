@@ -107,7 +107,6 @@ animation: slowbutton 0.4s forwards;
   flex-direction: column;
   gap: 16px;
 padding: 24px 0;  
-
   }
   /* justify ou text-align ou margin auto */
   ul li a {
